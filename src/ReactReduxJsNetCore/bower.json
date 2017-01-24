@@ -1,0 +1,23 @@
+{
+  "name": "asp.net",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "*.json",
+    "*.md",
+    "*.txt"
+  ],
+  "keywords": [
+    "jquery",
+    "asp.net",
+    "mvc",
+    "validation",
+    "unobtrusive"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "jquery": "3.1.0",
+    "jquery-validate": "1.15.1",
+    "jquery-validation-unobtrusive": "3.2.6"
+  }
+}
