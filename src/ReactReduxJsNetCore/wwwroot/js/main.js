@@ -233,7 +233,7 @@ webpackJsonp([0],{
 	var deleteComment = exports.deleteComment = function deleteComment(id) {
 	    return function (dispatch) {
 	        dispatch(deleteCommentRequest());
-	        return (0, _isomorphicFetch2.default)(url + "/" + id, {
+	        return (0, _isomorphicFetch2.default)(url + '/' + id, {
 	            method: 'DELETE'
 	        }).then(function (response) {
 	            return response.json();
@@ -601,14 +601,14 @@ webpackJsonp([0],{
 	
 	var _redux = __webpack_require__(/*! redux */ 190);
 	
-	var _commentbox = __webpack_require__(/*! ./commentbox */ 239);
+	var _CommentBox = __webpack_require__(/*! ./CommentBox */ 239);
 	
-	var _commentbox2 = _interopRequireDefault(_commentbox);
+	var _CommentBox2 = _interopRequireDefault(_CommentBox);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var app = (0, _redux.combineReducers)({
-	    commentBoxApp: _commentbox2.default
+	    commentBoxApp: _CommentBox2.default
 	});
 	
 	exports.default = app;
@@ -617,7 +617,7 @@ webpackJsonp([0],{
 
 /***/ 239:
 /*!************************************!*\
-  !*** ./app/reducers/commentbox.js ***!
+  !*** ./app/reducers/CommentBox.js ***!
   \************************************/
 /***/ function(module, exports, __webpack_require__) {
 

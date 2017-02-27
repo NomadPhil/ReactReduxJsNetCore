@@ -1,5 +1,5 @@
 ﻿import { combineReducers } from 'redux'
-import commentBoxApp from './commentbox'
+import commentBoxApp from './CommentBox'
 
 const app = combineReducers({
     commentBoxApp

@@ -87,7 +87,7 @@ export const addCommentError = (error) => {
 export const deleteComment = (id) => {
     return dispatch => {
         dispatch(deleteCommentRequest());
-        return fetch('{url}/{id}', {
+        return fetch(`${url}/${id}`, {
             method: 'DELETE'
         })
         .then(response => response.json())
